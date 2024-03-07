@@ -28,17 +28,35 @@
     console.log(a==='b');   //false
     console.log(a===b);     //true
     console.log("a"<"b");   //true
-*/
+
 
 //conditional statement
-let a=5;
-let b=6;
-if(a<b)
-{
-    console.log(a);
-}
-else
-{
-    console.log(b);
-}
+    let a=5;
+    let b=6;
+    if(a<b)
+    {
+        console.log(a);
+    }
+    else
+    {
+        console.log(b);
+    }
+
+
+    let color=green;
+    if(color=="red")
+    {
+        console.log("stop! light color is " + color);
+    }
+    if(color=="yellow")
+    {
+        console.log("slow down! light color is " + color);
+    }
+    if(color==="green")
+    {
+        console.log("go! light color is " + color);
+    }
+*/
+
+
 
