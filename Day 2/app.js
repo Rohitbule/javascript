@@ -17,3 +17,10 @@ console.log(name.toLowerCase());
 let str="Ilovecoding";
 console.log(str.indexOf("love"));
 console.log(str.indexOf("o"));
+
+//method chaining
+let a="  hello  "
+let b=msg.trim();
+console.log("after trim : ",b);
+b=b.toUpperCase();
+console.log("after uppercase : ",b);
