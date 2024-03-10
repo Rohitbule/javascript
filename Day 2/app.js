@@ -7,7 +7,7 @@ let newpass=password.trim();
 console.log(newpass);
 
 //str.touppercase()="ROHIT"
-//str.tolowercase()="rohit"
+//str.tolowercase()=" rohit"
 let name="ROHIT";
 let msg="bule";
 console.log(msg.toUpperCase());
