@@ -58,6 +58,9 @@ console.log(start);
 //CONCAT = merge 2 arrays
 //REVERSE = reverse an array
 //SLICE = copies a portion of an array 
+//SPLICE = REMOVE|REPLACES|ADD ELEMENTS IN PLACE
+//SPLICE = SPLICE(START,DELETECOUNT,ITEM)...ITEMN)
+
 let primary=["red","yellow","blue"];
 let secondary=["orange","green","violet"];
 // primary.indexof("yellow"); //1
@@ -69,7 +72,21 @@ let secondary=["orange","green","violet"];
 // let allcolors=primary.concat(secondary);
 // console.log(allcolors);
 // console.log(primary.reverse());
-console.log(primary.slice());
-console.log(primary.slice(2));
-console.log(primary.slice(2,3));
-console.log(primary.slice(-2));
+// console.log(primary.slice());
+// console.log(primary.slice(2));
+// console.log(primary.slice(2,3));
+// console.log(primary.slice(-2));
+console.log(primary.splice(2));
+console.log(primary.splice(0,2));
+console.log(primary.splice(0,1,"black","grey"));
+
+let cars=["audi","bmw","xuv","maruti"];
+console.log(cars.splice(3));
+console.log(cars.splice(0,1));
+cars.push("maruti");
+cars.push("ferrari");
+console.log(cars.splice(1,2));
+console.log(cars.splice(0,0,"toyota","xuv","maruti"));
+console.log(cars.splice(1,0,"mercedes"));
+console.log(cars.splice(1,1,"gwagon"));
+console.log(cars);
