@@ -52,3 +52,19 @@ console.log(start);
 start.unshift("june");
 start.unshift("july");
 console.log(start);
+
+//INDEXOF = returns index of something
+//INCLUDES = search for a value
+//concat=merge 2 arrays
+//reverse=reverse an array
+let primary=["red","yellow","blue"];
+let secondary=["orange","green","violet"];
+// primary.indexof("yellow"); //1
+// primary.indexOf("green");  //-1
+// primary.indexOf("Yellow");  //-1
+// primary.includes("red");    //true
+// primary.includes("green");  //green
+console.log(primary.concat(secondary));
+let allcolors=primary.concat(secondary);
+console.log(allcolors);
+console.log(primary.reverse());
