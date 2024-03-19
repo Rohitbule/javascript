@@ -55,8 +55,9 @@ console.log(start);
 
 //INDEXOF = returns index of something
 //INCLUDES = search for a value
-//concat=merge 2 arrays
-//reverse=reverse an array
+//CONCAT = merge 2 arrays
+//REVERSE = reverse an array
+//SLICE = copies a portion of an array 
 let primary=["red","yellow","blue"];
 let secondary=["orange","green","violet"];
 // primary.indexof("yellow"); //1
@@ -64,7 +65,11 @@ let secondary=["orange","green","violet"];
 // primary.indexOf("Yellow");  //-1
 // primary.includes("red");    //true
 // primary.includes("green");  //green
-console.log(primary.concat(secondary));
-let allcolors=primary.concat(secondary);
-console.log(allcolors);
-console.log(primary.reverse());
+// console.log(primary.concat(secondary));
+// let allcolors=primary.concat(secondary);
+// console.log(allcolors);
+// console.log(primary.reverse());
+console.log(primary.slice());
+console.log(primary.slice(2));
+console.log(primary.slice(2,3));
+console.log(primary.slice(-2));
