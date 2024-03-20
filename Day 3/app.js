@@ -24,11 +24,11 @@ console.log(name);
 name[10]="varad";
 console.log(name);
 
-// //Array methods
-// push:add to end
-// pop:delete from end and returns it.
-// unshift: add to Start
-// shift : delete from start and returns it.
+// Array methods
+        // push:add to end
+        // pop:delete from end and returns it.
+        // unshift: add to Start
+        // shift : delete from start and returns it.
 
 let car=["audi","bmw","xuv","maruti"];
 console.log(car);
@@ -63,30 +63,45 @@ console.log(start);
 
 let primary=["red","yellow","blue"];
 let secondary=["orange","green","violet"];
-// primary.indexof("yellow"); //1
-// primary.indexOf("green");  //-1
-// primary.indexOf("Yellow");  //-1
-// primary.includes("red");    //true
-// primary.includes("green");  //green
-// console.log(primary.concat(secondary));
-// let allcolors=primary.concat(secondary);
-// console.log(allcolors);
-// console.log(primary.reverse());
-// console.log(primary.slice());
-// console.log(primary.slice(2));
-// console.log(primary.slice(2,3));
-// console.log(primary.slice(-2));
-console.log(primary.splice(2));
-console.log(primary.splice(0,2));
-console.log(primary.splice(0,1,"black","grey"));
+//indexof method
+console.log(primary.indexOf("yellow")); //1
+console.log(primary.indexOf("green"));  //-1
+console.log(primary.indexOf("Yellow"));  //-1
+//includes
+console.log(primary.includes("red"));    //true
+console.log(primary.includes("green"));  //false
+//concat
+console.log(primary.concat(secondary));
+let allcolors=primary.concat(secondary);  //combibing both primary and seondary in allcolors array.
+console.log(allcolors);
+//reverse
+console.log(primary.reverse());
+//slice
+console.log(primary.slice()); //blue,yellow,red
+console.log(primary.slice(2));  //red
+console.log(primary.slice(1,3));    //red
+console.log(primary.slice(0,3));
+console.log(primary.slice(-2)); //blue,yellow
+//splice
+console.log(primary.splice(2)); //red
+console.log(primary.splice(0,2));   //blue,yellow
+console.log(primary.splice(0,1,"blue","black"));    //
 
 let cars=["audi","bmw","xuv","maruti"];
-console.log(cars.splice(3));
-console.log(cars.splice(0,1));
+console.log(cars);      //audi,bmw,xuv,maruti
+cars.splice(3);    
+console.log(cars);      //audi,bmw,xuv
+cars.splice(0,1);  
+console.log(cars);      //bmw,xuv
 cars.push("maruti");
 cars.push("ferrari");
-console.log(cars.splice(1,2));
-console.log(cars.splice(0,0,"toyota","xuv","maruti"));
-console.log(cars.splice(1,0,"mercedes"));
-console.log(cars.splice(1,1,"gwagon"));
+console.log(cars);      //audi,bmw,maruti,ferrari
+cars.splice(1,2);  
+console.log(cars);      //bmw,ferrari
+//console.log(cars.splice(0,0,"toyota","xuv","maruti"));
+
+cars.splice(1,0,"mercedes");
 console.log(cars);
+cars.splice(1,1,"gwagon");
+console.log(cars);
+
