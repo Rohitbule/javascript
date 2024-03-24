@@ -105,3 +105,14 @@ console.log(cars);
 cars.splice(1,1,"gwagon");
 console.log(cars);
 
+//SORITNG =SORT AN ARRAY . it can perform basically on string or characcters
+let  days=['monday','tueday','wednesday','thursday','friday','saturday','sunday'];
+days.sort();
+console.log(days);
+
+let squares=[25,16,4,49,36,9];
+squares.sort();
+console.log(squares);
+
+//splice pratice
+let 
