@@ -115,4 +115,14 @@ squares.sort();
 console.log(squares);
 
 //splice pratice
-let 
+let starts=['january','july','march','august'];
+starts.splice(0,2,'july','june');
+console.log(starts);
+
+//reverse pratice
+let lan=['c','c++','html','javascript','python','java','c#','sql']
+console.log(lan.reverse().indexOf('javascript'));
+console.log(lan);
+
+//ARRAT REFERENCES
+
