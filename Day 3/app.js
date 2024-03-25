@@ -116,13 +116,33 @@ console.log(squares);
 
 //splice pratice
 let starts=['january','july','march','august'];
-starts.splice(0,2,'july','june');
-console.log(starts);
+starts.splice(0,2,'july','june');                       //0,2=january and july will be deleted.july and jun e will get arranged on thier place. 
+console.log(starts);            
 
 //reverse pratice
-let lan=['c','c++','html','javascript','python','java','c#','sql']
-console.log(lan.reverse().indexOf('javascript'));
-console.log(lan);
+let lan=['c','c++','html','javascript','python','java','c#','sql'];
+console.log(lan.indexOf("html"));                       //2
+console.log(lan.reverse().indexOf('javascript'));       //4
+console.log(lan);                                       //['c','c++','html','javascript','python','java','c#','sql']
 
 //ARRAT REFERENCES
+let arr=['a','b'];
+let arrcpy=arr;                 //copy arr array in arrcpy .
+console.log(arrcpy);            //['a','b']
+arrcpy.push('c');               // add element in c
+console.log(arr);               //['a','b','c']
+console.log(arr == arrcpy);     //true
+
+//NESTED ARRAYS = ARRAYS OF ARRAYS
+let nes=[[2,4], [3,6], [4,8]];
+console.log(nes);               //[2,4], [3,6], [4,8]
+console.log(nes.length);        //3
+console.log(nes[0].length);     //2
+console.log(nes[0][1]);         //4
+
+//create a nested array t show the following tic tac toe game state
+let game=[['x',null,'0'], [null,'x',null], ['0',null,'x']];
+console.log(game);      //['x',null,'0'], [null,'x',null], ['0',null,'x']
+game[0][1]='0';         //null is replaced by 0
+console.log(game);      //['x','0','0'], [null,'x',null], ['0',null,'x']
 
