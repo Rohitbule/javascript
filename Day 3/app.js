@@ -2,16 +2,16 @@
 
 let marks=[99,85,93,76,62];
 let names=["adam","bob","catlyn"];
-let info=["aman",25,6.1]; //mixed array
+let info=["aman",25,6.1];               //mixed array
 
 console.log(marks);
 console.log(names);
 console.log(info);
-console.log(typeof names);  //object
-console.log(info[0][0]);    //a
-console.log(info[0]);       //aman
-console.log(info.length);  //3
-console.log(info[0].length); //4
+console.log(typeof names);              //object
+console.log(info[0][0]);                //a
+console.log(info[0]);                   //aman
+console.log(info.length);               //3
+console.log(info[0].length);            //4
 
 //empty array
 let emparr=[];
@@ -64,28 +64,28 @@ console.log(start);
 let primary=["red","yellow","blue"];
 let secondary=["orange","green","violet"];
 //indexof method
-console.log(primary.indexOf("yellow")); //1
-console.log(primary.indexOf("green"));  //-1
-console.log(primary.indexOf("Yellow"));  //-1
+console.log(primary.indexOf("yellow"));            //1
+console.log(primary.indexOf("green"));            //-1
+console.log(primary.indexOf("Yellow"));          //-1
 //includes
-console.log(primary.includes("red"));    //true
-console.log(primary.includes("green"));  //false
+console.log(primary.includes("red"));            //true
+console.log(primary.includes("green"));         //false
 //concat
 console.log(primary.concat(secondary));
-let allcolors=primary.concat(secondary);  //combibing both primary and seondary in allcolors array.
+let allcolors=primary.concat(secondary);        //combibing both primary and seondary in allcolors array.
 console.log(allcolors);
 //reverse
 console.log(primary.reverse());
 //slice
-console.log(primary.slice()); //blue,yellow,red
-console.log(primary.slice(2));  //red
-console.log(primary.slice(1,3));    //red
+console.log(primary.slice());           //blue,yellow,red
+console.log(primary.slice(2));          //red
+console.log(primary.slice(1,3));        //red
 console.log(primary.slice(0,3));
-console.log(primary.slice(-2)); //blue,yellow
+console.log(primary.slice(-2));         //blue,yellow
 //splice
-console.log(primary.splice(2)); //red
-console.log(primary.splice(0,2));   //blue,yellow
-console.log(primary.splice(0,1,"blue","black"));    //
+console.log(primary.splice(2));                         //red
+console.log(primary.splice(0,2));                       //blue,yellow
+console.log(primary.splice(0,1,"blue","black"));        //
 
 let cars=["audi","bmw","xuv","maruti"];
 console.log(cars);      //audi,bmw,xuv,maruti
