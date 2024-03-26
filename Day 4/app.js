@@ -60,8 +60,13 @@
 // //favorite game
 // const favmovie = 'avatar';
 // let guess = prompt ("guess my favourite movie");
-// while( (guess != favmovie) && (guess != "quit") )
+// while( guess != favmovie )
 // {
+//     if(guess == "quit")
+//     {
+//         console.log("you are quit");
+//         break;
+//     }
 //     guess = prompt ("wrong guess.please try again");
 // }
 // if(guess == favmovie)
@@ -72,3 +77,29 @@
 // {
 //     console.log("quit");
 // }
+
+// //BREAK KEYWORD
+// let i=1;
+// while( i <= 5)
+// {
+//     if(i == 3)
+//     {
+//         break;
+//     }
+//     console.log(i);
+//     i++;
+// }
+// console.log("we used break at 3");
+
+//LOOP WITH ARRAYS
+let fruits=['mango', 'apple', 'banana', 'litchi', 'orange']
+fruits.push("pineapple");                                   //it adding element to last of array
+for(let i=0; i<fruits.length; i++)
+{
+    console.log(i,'=', fruits[i])
+}
+console.log("reverse arry is printing");
+for(let i=fruits.length-1; i>=0; i--)
+{
+    console.log(i, '=', fruits[i]);
+}
