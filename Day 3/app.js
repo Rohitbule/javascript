@@ -24,11 +24,11 @@ console.log(name);
 name[10]="varad";
 console.log(name);
 
-// Array methods
-        // push:add to end
-        // pop:delete from end and returns it.
-        // unshift: add to Start
-        // shift : delete from start and returns it.
+// ARRAYS METHODS
+        // PUSH : add to end
+        // POP : delete from end and returns it.
+        // UNSHIFT : add to Start
+        // SHIFT : delete from start and returns it.
 
 let car=["audi","bmw","xuv","maruti"];
 console.log(car);

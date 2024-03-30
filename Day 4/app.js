@@ -161,11 +161,11 @@ while(true)
 {
     if(req == 'quit')
     {
-        console.log("quiting app");
+        console.log("quit app");
         break;
     }
 
-    if(req == 'list')
+    if(req == 'list')           //USE TO SHOW PRINTED VALUE
     {
         console.log('------------------');
         for(let i=0; i<todo.length; i++ )
