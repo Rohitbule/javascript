@@ -160,23 +160,78 @@
 //1. takes one or multiple functions functions as argument
 //2. returns a functions.
 
-//1
-function multiplegreet(func , n)
-{
-    for(let i=1; i<=n; i++)
-        {
-            func();
-        }
-}
+//1. takes one or multiple functions functions as argument
+// function multiplegreet(func , n)
+// {
+//     for(let i=1; i<=n; i++)
+//         {
+//             func();
+//         }
+// }
 
-let greet = function()
-{
-    console.log("hello");
-}
-multiplegreet(greet,2);
+// let greet = function()
+// {
+//     console.log("hello");
+// }
+// multiplegreet(greet,2);
 
+//2 . returns function
+// function oddeventest(request)  
+// {
+//     if(request == "odd")
+//         {
+//             return function(n)
+//             {
+//                 console.log(!(n%2 == 0));
+//             }
+//         }
+//         else if(request == "even")
+//             {
+//                 return function(n)
+//                 {
+//                     console.log(n%2 == 0);
+//                 }
+//             }
+//         else
+//         {
+//             console.log("Wrong request");
+//         }
+// }
+// let oddTester = oddeventest("odd");
+// oddTester(8);
 
+//methods : Actions that can be performed on an object.
+// const calculator = {
+//     num: 55 ,
+//     add: function(a,b)
+//     {
+//         return a + b;
+//     },
+//     sub: function(a,b)
+//     {
+//         return a - b;
+//     },
+//     mul : function(a,b)
+//     {
+//         return a * b;
+//     }
+// };
+// console.log(calculator.add(1,2));
+// console.log(calculator.sub(1,2));
+// console.log(calculator.add(1,2));
 
+//method shorthand
+const calculator = {
+    add(a,b)
+    {
+        return a+b;
+    },
+    sub(a,b)
+    {
+        return a-b;
+    }
+};
+console.log(calculator.add(1,2));
 
 
 
