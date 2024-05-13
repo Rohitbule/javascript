@@ -53,7 +53,6 @@
 //     let avg = (a+b+c)/3;
 //     console.log(avg);
 // }
-
 // avg(10,20,30);
 
 //return function.
@@ -63,7 +62,6 @@
 //     return a+b;
 //     //console.log("it will not get print");
 // }
-
 // console.log(sum(sum(5,5),5));
 
 // function getsum(n)
@@ -75,24 +73,19 @@
 //         }
 //         return sum;
 // }
-
 // console.log(getsum(10));
 
 //create a function that returns the concatenation of all strings in an array.
 // let str = ["hi","hello","bye","!"]
-
 // function concat(str)
 // {
 //     let result ="";
-
 //     for(let i=0; i<str.length; i++)
 //         {
 //             result +=str[i];
 //         }
-
 //     return result;
 // }
-
 // console.log(concat(str));
 
 //scope : scope determine the accessiblity of variables,objects,and functions from different parts of the code.
@@ -168,7 +161,6 @@
 //             func();
 //         }
 // }
-
 // let greet = function()
 // {
 //     console.log("hello");
