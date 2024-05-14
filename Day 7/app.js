@@ -79,3 +79,75 @@
 //     console.log("hi there");
 // },2000);
 // console.log(id2);
+
+//THIS WITH ARROW FUNCTIONS
+//function = scope = this = calling object.
+//Arrow = lexical scope = parent scope = call.
+// const student = {
+//     name : "aman",
+//     marks : 95,
+//     prop: this,  //global scope
+//     getname: function() {
+//         console.log(this);
+//         return this.name;  //this is chi value student ahe.
+//     },
+//     getmarks: () => {
+//         console.log(this);  //parent scope => window 
+//         return this.marks;    //this is chi value window ahe.
+//     },
+//     getinformation1: function() {
+//         setTimeout( () => {
+//             console.log(this);  //student
+//         },2000);
+//     },
+//     getinformation2: function() {
+//         setTimeout( function() {
+//             console.log(this);  //window
+//         },2000);
+//     },
+// };
+// console.log(student.getname());
+// console.log(student.getmarks());
+
+//wrrite an arrow functions that returns the square of a number 'n'.
+// const square = (n) => n*n;
+// console.log(square(3));
+
+//write a function that prints "Hello world" 5 times at intervals of 2s each.
+// let id = setInterval(() => {
+//     console.log("hello world");
+// },2000);
+
+// setTimeout(() => {
+//     clearInterval(id);
+// },10000);
+
+// const object = {
+//     message: 'Hello, World!',
+//     logMessage () 
+//     {
+//         console.log(this.message);
+//     }
+// };
+// setTimeout (object.logMessage,1000);
+
+// const object = {
+//     message: 'Hello, World!',
+//     logMessage() {
+//         console.log(this.message);
+//     }
+// };
+
+// setTimeout(object.logMessage.bind(object), 1000);
+
+// let length = 4;
+// function callback() {
+//     console.log(this.length);
+// }
+// const object = {
+//     length: 5,
+//     method(callback) {
+//         callback();
+//     },
+// };
+// object.method(callback,1,2);
