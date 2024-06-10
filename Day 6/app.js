@@ -47,7 +47,7 @@
 //  rolldice();
 //  rolldice();
 
-//function with argument = values we pass to the function.
+//FUNCTION WITH ARGUMENT = values we pass to the function.
 // function avg(a,b,c)
 // {
 //     let avg = (a+b+c)/3;
@@ -60,11 +60,11 @@
 // {
 //     console.log("it will get print");
 //     return a+b;
-//     //console.log("it will not get print");
+//     //console.log("it will not get print");  //return chya khalach print nhi honar
 // }
-// console.log(sum(sum(5,5),5));
+// console.log(sum(sum(5,5),5));   //donada sum function la call kel
 
-// function getsum(n)
+//  function getsum(n)
 // {
 //     let sum=0;
 //     for(let i=1; i<=n; i++)
@@ -89,12 +89,13 @@
 // console.log(concat(str));
 
 //scope : scope determine the accessiblity of variables,objects,and functions from different parts of the code.
-//function,block,lexical,global this are scope.
+//function scope ,block scope,lexical scope,global scope .
+
 //function scope: variables defined inside a function are not accessible(visible) from outside the function.
 //    let sum =54; //global scope
 //    function calsum(a,b)
 //    {
-//         //let sum = a+b;   //function scope
+//         let sum = a+b;   //function scope
 //         console.log(sum);
 //    }
 //    calsum(1,2);
@@ -107,27 +108,25 @@
 //          let str = "adult";
 //          console.log(str);  //block chya atta madli value ch print kart
 //     }
-//console.log(str);  str blocked chya atta madhe declared kelel ahe.
+// console.log(str);  //str blocked chya atta madhe declared kelel ahe.
 
 //Lexiacl Scope : a variable defined outside a function can be accesed inside another function defined after the variable declaration.
 //the oppsite is not true.
-
 // function outerfunction()
 // {
 //     let x = 10;
 //     let y = 20;
 //     function innerfunction()
 //     {
-//         //let a =200;
-//         console.log(x);
+//         let a =200;
+//         console.log(x);  //function chya atta madhi function chya value gheta yetat.
 //     }
 //     innerfunction();
-//    // console.log(a);
+//     //console.log(a);
 // }
 // outerfunction();
 
 // let greet = "hello";
-
 // function changegreet()
 // {
 //     let greet = "namaste";
@@ -136,6 +135,7 @@
 //     {
 //         console.log(greet);
 //     }
+//     //innergreen();
 // }
 // console.log(greet);
 // changegreet();
@@ -150,11 +150,11 @@
 
 //Higher order functions
 // a function that does one or both:
-//1. takes one or multiple functions functions as argument
+//1. takes one or more functions functions as argument
 //2. returns a functions.
 
-//1. takes one or multiple functions functions as argument
-// function multiplegreet(func , n)
+//1. takes one or multiple functions ,functions as argument
+//function multiplegreet(func, n)
 // {
 //     for(let i=1; i<=n; i++)
 //         {
@@ -189,8 +189,9 @@
 //             console.log("Wrong request");
 //         }
 // }
-// let oddTester = oddeventest("odd");
-// oddTester(8);
+// let oddTester = oddeventest("even");
+// oddTester(9);
+
 
 //methods : Actions that can be performed on an object.
 // const calculator = {
@@ -210,25 +211,20 @@
 // };
 // console.log(calculator.add(1,2));
 // console.log(calculator.sub(1,2));
-// console.log(calculator.add(1,2));
+// console.log(calculator.add(9,2));
 
 //method shorthand
-const calculator = {
-    add(a,b)
-    {
-        return a+b;
-    },
-    sub(a,b)
-    {
-        return a-b;
-    }
-};
-console.log(calculator.add(1,2));
-
-
-
-
-
+// const calculator = {
+//     add(a,b)
+//     {
+//         return a+b;
+//     },
+//     sub(a,b)
+//     {
+//         return a-b;
+//     }
+// };
+// console.log(calculator.add(1,2));
 
 
 

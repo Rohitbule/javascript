@@ -1,22 +1,22 @@
 //THIS KEYWORD : "THIS" keyword to an object that is executing the current piece of code .
-// const student  = {
-//     name : "shradhha",
-//     age : 23,
-//     eng : 95,
-//     math : 90,
-//     phy : 98,
-//     getavg()
-//     {
-//         console.log(this);
-//         let avg = (this.eng + this.math + this.phy) / 3;
-//         console.log(`${this.name} got avg marks = ${avg}`);
-//     }
-// }
-// //console.log(student.getavg());
-// function getavg()
-// {
-//     console.log(this);
-// }
+const student  = {
+    name : "shradhha",
+    age : 23,
+    eng : 95,
+    math : 90,
+    phy : 98,
+    getavg()
+    {
+        console.log(this);
+        let avg = (this.eng + this.math + this.phy) / 3;
+        console.log(`${this.name} got avg marks = ${avg}`);
+    }
+}
+console.log(student.getavg());
+function getavg()
+{
+    console.log(this);
+}
 
 //try & catch
 //the ttry statement allows you to define a block of code to be tested for errors while it is being executed .
